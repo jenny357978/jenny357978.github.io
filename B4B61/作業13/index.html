@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>作業13</title>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <link rel="stylesheet" href="css/skitter.styles.css"/>
+    <style>
+        .box_skitter_large {
+            width: 700px;
+            height: 1000px;
+        }
+
+        body {
+            background-color: #000000;
+        }
+
+        /* 新增這段CSS */
+        .box_skitter_large img {
+            max-width: 800px; /* 限制圖片最大寬度為800px */
+            max-height: 500px; /* 限制圖片最大高度為500px */
+        }
+    </style>
+    <script src="js/jquery-1.5.2.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.animate-colors-min.js"></script>
+    <script src="js/jquery.skitter.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.box_skitter_large').skitter({
+                hideTools: true
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="border_box">
+    <div class="box_skitter box_skitter_large">
+        <ul>
+            <li>
+                <img src="images/01.jpg" class="cubeShow"/>
+                <div class="label_text">
+                    <p> 士林官邸的街景。</p>
+            </li>
+            <li>
+                <img src="images/02.jpg" class="directionRight"/>
+                <div class="label_text">
+                    <p>大學最好的朋友。</p>
+                </div>
+            </li>
+            <li>
+                <img src="images/03.jpg" class="directionRight"/>
+                <div class="label_text">
+                    <p>在健身房重訓。</p>
+                </div>
+            </li>
+            <li>
+                <img src="images/04.jpg" class="paralell"/>
+                <div class="label_text">
+                    <p>我的可愛的姪女。</p>
+                </div>
+            </li>
+            <li>
+                <img src="images/05.jpg" class="upBars"/>
+                <div class="label_text">
+                    <p>我與貓。</p>
+                </div>
+            </li>
+            <li>
+                <img src="images/06.jpg" class="upBars"/>
+                <div class="label_text">
+                    <p>星巴克的咖啡。</p>
+                </div>
+            </li>
+            <li>
+                <img src="images/07.jpg" class="fade"/>
+                <div class="label_text">
+                    <p>美麗的浪花。</p>
+                </div>
+            </li>
+            <li>
+                <img src="images/08.jpg" class="circlesInside"/>
+                <div class="label_text">
+                    <p>香港的夜景。</p>
+                </div>
+            </li>
+            <li>
+                <img src="images/09.jpg" class="glassBlock"/>
+                <div class="label_text">
+                    <p>香港迪士尼的煙火。</p>
+                </div>
+            </li>
+            <li>
+                <img src="images/10.jpg" class="cubeSize"/>
+                <div class="label_text"
+                    <p>漁光島夕陽。</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
